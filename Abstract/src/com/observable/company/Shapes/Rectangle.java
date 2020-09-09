@@ -1,4 +1,4 @@
-package com.observable.company.Shapefolder;
+package com.observable.company.Shapes;
 
 import com.observable.company.Interfaces.IShape;
 
