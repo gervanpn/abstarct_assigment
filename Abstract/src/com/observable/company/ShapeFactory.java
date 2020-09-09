@@ -19,6 +19,7 @@ public class ShapeFactory extends AbstractFactory {
 
     @Override
     public IColor getColor() {
+        //return null;
         return null;
     }
 
