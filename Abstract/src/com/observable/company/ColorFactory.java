@@ -1,4 +1,8 @@
-public class ColorFactory implements AbstractFactory {
+package com.observable.company;
+
+import java.awt.*;
+
+public class ColorFactory extends AbstractFactory {
 
     Color color;
 
@@ -7,8 +11,14 @@ public class ColorFactory implements AbstractFactory {
     }
 
     @Override
-    public Shape getColor() {
+    public Shape getShape() {
+        return null;
+    }
+
+    @Override
+    public Color getColor() {
         System.out.println(this.color + "has been created.");
+        return null;
     }
 
 
