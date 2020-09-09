@@ -1,6 +1,8 @@
 package com.observable.company;
 
-public class Rectangle implements IShap {
+import com.observable.company.Interfaces.IShape;
+
+public class Rectangle implements IShape {
     @Override
     public void draw() {
         System.out.println("this is a rectangle");
