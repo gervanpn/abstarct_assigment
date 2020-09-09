@@ -14,7 +14,7 @@ public class ShapeFactory extends AbstractFactory {
     @Override
     public IShape getShape() {
         System.out.println(this.shape.toString() + " has been created.");
-        return null;
+        return this.shape;
     }
 
     @Override

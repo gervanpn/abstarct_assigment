@@ -16,8 +16,8 @@ public class PatternDemo {
 
         FactoryProducer clrFactory = new FactoryProducer(clr, red);
         FactoryProducer shpFactory = new FactoryProducer(shp, circle);
-        clr.getColor();
-        shp.getShape();
-        //shpFactory.getFactory().getShape().draw();
+        clrFactory.getColor().fill();
+        shpFactory.getShape().draw();
+
     }
 }
