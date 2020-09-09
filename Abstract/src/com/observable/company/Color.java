@@ -1,5 +1,5 @@
 package com.observable.company;
 
-public interface Color {
+public interface IColor {
     public void fill();
 }
