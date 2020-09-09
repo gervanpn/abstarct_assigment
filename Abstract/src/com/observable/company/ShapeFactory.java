@@ -1,3 +1,4 @@
+
 package com.observable.company;
 
 import com.observable.company.Interfaces.IColor;
