@@ -1,4 +1,8 @@
+
+package com.observable.company;
+
 public class ShapeFactory implements AbstractFactory {
+
     Shape shape;
 
     public ShapeFactory(Shape shape) {
@@ -8,6 +12,11 @@ public class ShapeFactory implements AbstractFactory {
     @Override
     public Shape getShape() {
         System.out.println(this.shape + "has been created.");
+    }
+
+    @Override
+    public Color getColor() {
+        //return null;
     }
 
 
