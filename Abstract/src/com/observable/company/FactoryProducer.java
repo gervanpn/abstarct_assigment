@@ -2,7 +2,7 @@ package com.observable.company;
 
 public class FactoryProducer {
 
-    AbstractFactory thisFactory;
+    private AbstractFactory thisFactory;
 
     public FactoryProducer(AbstractFactory _factory){
         this.thisFactory = _factory;

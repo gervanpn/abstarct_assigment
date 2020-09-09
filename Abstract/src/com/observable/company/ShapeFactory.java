@@ -1,22 +1,24 @@
 package com.observable.company;
 
-import java.awt.*;
+import com.observable.company.Interfaces.IColor;
+import com.observable.company.Interfaces.IShape;
 
 public class ShapeFactory extends AbstractFactory {
-    Shape shape;
+    IShape shape;
 
-    public ShapeFactory(Shape shape) {
+    public ShapeFactory(IShape shape) {
         this.shape = shape;
     }
 
     @Override
-    public Shape getShape() {
+    public IShape getShape() {
         System.out.println(this.shape + "has been created.");
+        return null;
     }
 
     @Override
-    public Color getColor() {
-        //return null;
+    public IColor getColor() {
+        return null;
     }
 
 

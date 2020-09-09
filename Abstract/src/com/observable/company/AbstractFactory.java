@@ -1,9 +1,10 @@
 package com.observable.company;
 
-import java.awt.*;
+import com.observable.company.Interfaces.IColor;
+import com.observable.company.Interfaces.IShape;
 
 public abstract class AbstractFactory {
 
-    public abstract Shape getShape();
-    public abstract Color getColor();
+    public abstract IShape getShape();
+    public abstract IColor getColor();
 }
