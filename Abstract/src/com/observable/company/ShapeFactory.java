@@ -3,21 +3,15 @@ package com.observable.company;
 
 public class ShapeFactory implements AbstractFactory {
 
-    Shape shape;
+    IShape shape;
 
-    public ShapeFactory(Shape shape) {
+    public ShapeFactory(IShape shape) {
         this.shape = shape;
     }
 
     @Override
-    public Shape getShape() {
+    public IShape getShape() {
         System.out.println(this.shape + "has been created.");
     }
-
-    @Override
-    public Color getColor() {
-        //return null;
-    }
-
 
 }

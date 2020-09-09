@@ -4,15 +4,10 @@ import java.awt.*;
 
 public class ColorFactory extends AbstractFactory {
 
-    Color color;
+    IColor color;
 
-    public ColorFactory(Color color) {
+    public ColorFactory(IColor color) {
         this.color = color;
-    }
-
-    @Override
-    public Shape getShape() {
-        return null;
     }
 
     @Override
