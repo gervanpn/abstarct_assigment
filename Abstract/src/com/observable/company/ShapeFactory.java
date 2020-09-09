@@ -1,8 +1,8 @@
+
 package com.observable.company;
 
-import java.awt.*;
+public class ShapeFactory implements AbstractFactory {
 
-public class ShapeFactory extends AbstractFactory {
     Shape shape;
 
     public ShapeFactory(Shape shape) {

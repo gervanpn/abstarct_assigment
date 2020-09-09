@@ -1,5 +1,7 @@
 package com.observable.company;
 
+import com.observable.company.Interfaces.IColor;
+
 public class Green implements IColor {
     @Override
     public void fill() {
