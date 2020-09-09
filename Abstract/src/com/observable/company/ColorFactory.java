@@ -1,7 +1,7 @@
 public class ColorFactory implements AbstractFactory {
 
     @Override
-    public Shape getShape() {
+    public Color getColor() {
 
     }
 
