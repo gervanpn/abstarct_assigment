@@ -1,7 +1,7 @@
 
 package com.observable.company;
 
-public class ShapeFactory implements AbstractFactory {
+public class ShapeFactory extends AbstractFactory {
 
     IShape shape;
 
@@ -12,6 +12,9 @@ public class ShapeFactory implements AbstractFactory {
     @Override
     public IShape getShape() {
         System.out.println(this.shape + "has been created.");
+        return this.shape;
     }
+
+
 
 }

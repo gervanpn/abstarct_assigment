@@ -13,7 +13,7 @@ public class ColorFactory extends AbstractFactory {
     @Override
     public Color getColor() {
         System.out.println(this.color + "has been created.");
-        return null;
+        return this.color;
     }
 
 
