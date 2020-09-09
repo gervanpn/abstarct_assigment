@@ -1,7 +1,7 @@
-public class ColorFactory implements AbstractFactory {
+public class ShapeFactory implements AbstractFactory {
     Shape shape;
 
-    public ShapeFactory(Shape sahpe) {
+    public ShapeFactory(Shape shape) {
         this.shape = shape;
     }
 
