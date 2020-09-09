@@ -15,9 +15,31 @@ public class FactoryProducer{ //extends AbstractFactory {
         //thisFactory. = _color;
         //this.shape = _shape;
     }
+    public FactoryProducer(AbstractFactory _factory, IColor _color){
+        //public FactoryProducer(IColor _color, IShape _shape){
+        this.thisFactory = _factory;
+        this.thisFactory.setColor(_color);
+        //this.thisFactory.setShape(_shape);
+        //this.shape = _shape;
+    }
+    public FactoryProducer(AbstractFactory _factory, IShape _shape){
+        //public FactoryProducer(IColor _color, IShape _shape){
+        this.thisFactory = _factory;
+        //this.thisFactory.setColor(_color);
+        this.thisFactory.setShape(_shape);
+        //this.shape = _shape;
+    }
 
     public AbstractFactory getFactory(){
         return this.thisFactory;
+    }
+
+    public IColor getColor(){
+        return this.thisFactory.getColor();
+    }
+
+    public IShape getShape(){
+        return this.thisFactory.getShape();
     }
 
 }

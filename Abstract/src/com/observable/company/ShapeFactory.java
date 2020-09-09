@@ -23,5 +23,15 @@ public class ShapeFactory extends AbstractFactory {
         return null;
     }
 
+    @Override
+    public void setShape(IShape _shape) {
+        this.shape = _shape;
+    }
+
+    @Override
+    public void setColor(IColor _color) {
+
+    }
+
 
 }

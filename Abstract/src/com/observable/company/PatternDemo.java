@@ -14,11 +14,10 @@ public class PatternDemo {
         ColorFactory clr = new ColorFactory(red);
         ShapeFactory shp = new ShapeFactory(circle);
 
-        FactoryProducer clrFactory = new FactoryProducer(clr);
-        FactoryProducer shpFactory = new FactoryProducer(shp);
-        clrFactory.getFactory().getColor();
-        shpFactory.getFactory().getShape();
-        //clrFactory.getFactory().getColor().fill();
+        FactoryProducer clrFactory = new FactoryProducer(clr, red);
+        FactoryProducer shpFactory = new FactoryProducer(shp, circle);
+        clr.getColor();
+        shp.getShape();
         //shpFactory.getFactory().getShape().draw();
     }
 }
