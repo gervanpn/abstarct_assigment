@@ -6,7 +6,6 @@ import com.observable.company.Colors.Red;
 import com.observable.company.Interfaces.IColor;
 import com.observable.company.Interfaces.IShape;
 
-import java.awt.*;
 
 public class ColorFactory extends AbstractFactory {
 
@@ -24,7 +23,7 @@ public class ColorFactory extends AbstractFactory {
                 icolor = new Red();
             case "green":
                 icolor = new Green();
-            default:
+            case "blue":
                 icolor = new Blue();
         }
         return icolor;

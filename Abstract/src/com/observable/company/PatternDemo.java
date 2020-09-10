@@ -10,10 +10,8 @@ public class PatternDemo {
 
     public static void main(String[] args) {
 
-        FactoryProducer fp = new FactoryProducer("shape", "circle");
-
-        fp.getFactory().getShape().draw();
-
-	
+        FactoryProducer fp = new FactoryProducer("color", "green");
+//        fp.getFactory().getShape().draw();
+        fp.getFactory().getColor().fill();
     }
 }

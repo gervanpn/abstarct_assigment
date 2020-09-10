@@ -1,9 +1,6 @@
 
 package com.observable.company;
 
-import com.observable.company.Colors.Blue;
-import com.observable.company.Colors.Green;
-import com.observable.company.Colors.Red;
 import com.observable.company.Interfaces.IColor;
 import com.observable.company.Interfaces.IShape;
 import com.observable.company.Shapefolder.Circle;
@@ -24,9 +21,9 @@ public class ShapeFactory extends AbstractFactory {
         switch (shape) {
             case "circle":
                 ishape = new Circle();
-            case "green":
+            case "square":
                 ishape = new Square();
-            default:
+            case "rectangle":
                 ishape = new Rectangle();
         }
         return ishape;
