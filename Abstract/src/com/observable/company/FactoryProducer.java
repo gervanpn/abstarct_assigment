@@ -23,8 +23,8 @@ public class FactoryProducer{ //extends AbstractFactory {
         this.thisFactory.setShape(_shape);
     }
 
-    public AbstractFactory getFactory(){
-        return this.thisFactory;
+    public AbstractFactory getFactory() {
+       return ap;
     }
 
     public IColor getColor(){

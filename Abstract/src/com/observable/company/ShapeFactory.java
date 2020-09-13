@@ -1,13 +1,19 @@
 
 package com.observable.company;
 
+import com.observable.company.Colors.Blue;
+import com.observable.company.Colors.Green;
+import com.observable.company.Colors.Red;
 import com.observable.company.Interfaces.IColor;
 import com.observable.company.Interfaces.IShape;
+import com.observable.company.Shapefolder.Circle;
+import com.observable.company.Shapefolder.Rectangle;
+import com.observable.company.Shapefolder.Square;
 
 public class ShapeFactory extends AbstractFactory {
     IShape shape;
 
-    public ShapeFactory(IShape shape) {
+    public ShapeFactory(String shape) {
         this.shape = shape;
     }
 
@@ -17,9 +23,9 @@ public class ShapeFactory extends AbstractFactory {
         return this.shape;
     }
 
+
     @Override
     public IColor getColor() {
-        //return null;
         return null;
     }
 

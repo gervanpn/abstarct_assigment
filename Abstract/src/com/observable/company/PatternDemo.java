@@ -6,6 +6,7 @@ import com.observable.company.Colors.*;
 
 public class PatternDemo {
 
+
     public static void main(String[] args) {
 
         IColor red = new Red();

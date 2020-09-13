@@ -1,35 +1,38 @@
 package com.observable.company;
 
+import com.observable.company.Colors.Blue;
+import com.observable.company.Colors.Green;
+import com.observable.company.Colors.Red;
 import com.observable.company.Interfaces.IColor;
 import com.observable.company.Interfaces.IShape;
 
+import java.awt.*;
+
 public class ColorFactory extends AbstractFactory {
 
-    IColor color;
+    String color;
+    IColor icolor;
 
-    public ColorFactory(IColor color) {
+    public ColorFactory(String color) {
         this.color = color;
+    }
+
+    @Override
+    public IColor getColor() {
+        switch (color) {
+            case "red":
+                icolor = new Red();
+            case "green":
+                icolor = new Green();
+            default:
+                icolor = new Blue();
+        }
+        return icolor;
     }
 
     @Override
     public IShape getShape() {
         return null;
-    }
-
-    @Override
-    public IColor getColor() {
-        //System.out.println(this.color.toString() + " has been created.");
-        return this.color;
-    }
-
-    @Override
-    public void setShape(IShape _shape) {
-
-    }
-
-    @Override
-    public void setColor(IColor _color) {
-        this.color = _color;
     }
 
 
